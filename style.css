@@ -285,19 +285,11 @@ nav .navbar-menu li a:hover {
   }
 
   /* beranda */
-  .beranda-garda .main-text {
-    bottom: 20px;
-  }
 
   .beranda-garda .main-text .title-beranda {
     margin-bottom: 0.7rem;
     font-size: 2.5rem;
   }
-
-  /* .beranda-garda .main-text p {
-    font-size: 0.8rem;
-    line-height: 1.4rem;
-  } */
 
   .beranda-garda .main-text .point-text h5 {
     margin-top: 3rem;
@@ -335,10 +327,6 @@ nav .navbar-menu li a:hover {
   .tentangkami {
     margin-top: 3rem;
     padding-top: 4.5rem;
-  }
-
-  .beranda-garda .main-text {
-    bottom: 20px;
   }
 
   .beranda-garda .main-text .title-beranda {
