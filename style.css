@@ -563,7 +563,7 @@ nav .navbar-menu li a:hover {
   .beranda-garda {
     position: relative;
     width: 100%;
-    min-height: 90vh;
+    min-height: 95vh;
     background-image: url(asset/Foto-galeri/IDE04915.jpeg);
 /*     background-position-x: -100px; */
     background-size: cover;
