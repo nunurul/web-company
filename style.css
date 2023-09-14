@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  color: black;
+}
+
+section {
+  padding: 2rem 6rem 2rem;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.2rem 6rem;
+  background: #fff;
+  box-shadow: 0px 3px 30px 5px rgba(216, 235, 246, 0.49);
+  z-index: 100000;
+}
+
+#menu-icon {
+  font-size: 1.5rem;
+  z-index: 100001;
+  cursor: pointer;
+  display: none;
+}
+
+nav .logo-navbar img {
+  width: 60px;
+}
+
+nav .navbar-menu {
+  display: flex;
+  gap: 3rem;
+}
+
+nav .navbar-menu li {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+nav .navbar-menu li a {
+  color: #1f8eb4;
+  font-weight: 500;
+}
+
+nav .navbar-menu li a:hover {
+  color: #053b50;
+}
+
+/* beranda */
+.beranda-garda {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(asset/Foto-galeri/IDE04915.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.beranda-garda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    59,
+    57,
+    57,
+    0.68
+  ); /* Ganti warna dan opacity sesuai keinginan Anda */
+}
+
+.beranda-garda .main-text {
+  position: absolute;
+  bottom: 50px;
+}
+
+.beranda-garda .main-text .title-beranda {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.beranda-garda .main-text p {
+  width: 1000px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.6rem;
+}
+
+.beranda-garda .main-text .point-text h5 {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* tentang kami */
+.tentangkami {
+  margin-top: 3rem;
+  padding-top: 7rem;
+}
+
+.tentangkami h5 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #053b50;
+}
+
+.tentangkami p {
+  text-align: justify;
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #176b87;
+  /* padding: 0 10rem; */
+}
+
+/* Galeri */
+.galeri-garda {
+  margin-top: 3rem;
+  background-color: #eeeeee5c;
+}
+
+.galeri-garda h5 {
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #053b50;
+}
+
+.container-garda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1rem;
+}
+
+.container-garda .box-garda {
+  width: 200px;
+  height: 150px; /* Atur ketinggian sesuai kebutuhan Anda */
+  overflow: hidden; /* Ini akan memastikan gambar yang lebih besar dari .box-garda akan terpotong */
+  border-radius: 10%;
+  position: relative;
+}
+
+.container-garda .box-garda img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; /* Pastikan gambar mengisi seluruh .box-garda */
+  position: relative;
+}
+
+/* our client */
+.client-garda,
+.event-garda {
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
+  margin-top: 3rem;
+  /* background-color: #eeeeee5c; */
+}
+
+.client-garda h5,
+.event-garda h5 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #053b50;
+}
+
+.container-client-garda,
+.container-event-garda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.client-garda .container-client-garda .box-client-first img,
+.event-garda .container-event-garda .box-event-first img {
+  width: 100px;
+}
+
+/* contact */
+.contact {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee5c;
+}
+
+.contact .title-footer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact .title-footer img {
+  width: 60px;
+}
+
+.contact .title-footer span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact .contact-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact .contact-nav .contact-nav-box {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact .contact-nav li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact .contact-nav li i {
+  padding: 6px;
+  background: #053b50;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.contact .contact-nav li span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 1097px) {
+  section {
+    padding: 2rem 3rem 2rem;
+  }
+
+  nav {
+    padding: 1.2rem 3rem;
+  }
+
+  .beranda-garda .main-text p {
+    width: 800px;
+  }
+
+  .client-garda .container-client-garda .box-client-first img,
+  .event-garda .container-event-garda .box-event-first img {
+    width: 70px;
+  }
+
+  /* beranda */
+  .beranda-garda .main-text {
+    bottom: 20px;
+  }
+
+  .beranda-garda .main-text .title-beranda {
+    margin-bottom: 0.7rem;
+    font-size: 2.5rem;
+  }
+
+  /* .beranda-garda .main-text p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  } */
+
+  .beranda-garda .main-text .point-text h5 {
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    padding: 2rem 3rem 0rem;
+  }
+
+  .contact {
+    margin-top: 3rem;
+  }
+
+  .client-garda,
+  .event-garda {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .galeri-garda {
+    margin-top: 3rem;
+    background-color: #eeeeee5c;
+  }
+
+  .galeri-garda h5 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .tentangkami {
+    margin-top: 3rem;
+    padding-top: 4.5rem;
+  }
+
+  .beranda-garda .main-text {
+    bottom: 20px;
+  }
+
+  .beranda-garda .main-text .title-beranda {
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+  }
+
+  .beranda-garda .main-text p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .beranda-garda .main-text .point-text h5 {
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact .contact-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: start;
+    justify-content: none;
+    background: #eeeeee5c;
+  }
+
+  .beranda-garda .main-text p {
+    width: 500px;
+  }
+
+  .client-garda .container-client-garda .box-client-first img,
+  .event-garda .container-event-garda .box-event-first img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .contact {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeee5c;
+  }
+
+  .contact .title-footer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact .title-footer img {
+    width: 60px;
+  }
+
+  .contact .title-footer span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .contact .contact-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .contact .contact-nav .contact-nav-box {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .contact .contact-nav li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .contact .contact-nav li i {
+    padding: 6px;
+    background: #053b50;
+    border-radius: 50%;
+    color: #fff;
+  }
+
+  .contact .contact-nav li span {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #menu-icon {
+    display: initial;
+  }
+
+  nav .navbar-menu {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 4px rgb(14 55 54/ 14%);
+    border-top: 2px solid #053b50;
+    transition: 0.2s;
+    text-align: left;
+    padding-left: 3rem;
+    gap: 0rem;
+  }
+
+  nav .navbar-menu li a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+  }
+
+  .navbar-menu.active {
+    top: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  section {
+    padding: 1.5rem 2rem 1.5rem;
+  }
+
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .container-garda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 0.8rem;
+  }
+
+  .container-garda .box-garda {
+    width: 150px;
+    height: 100px;
+  }
+
+  .container-client-garda,
+  .container-event-garda {
+    flex-wrap: wrap;
+  }
+
+  .contact .contact-nav .contact-nav-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact .contact-nav .contact-nav-box li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-nav .map {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-jalan {
+    width: 350px;
+    text-align: center;
+  }
+
+  .contact .title-footer {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .beranda-garda {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(asset/Foto-galeri/IDE04915.jpeg);
+    background-position-x: -200px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .beranda-garda .main-text p {
+    width: 300px;
+    text-align: justify;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .beranda-garda .main-text .point-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .beranda-garda .main-text {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .beranda-garda .main-text .title-beranda {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .beranda-garda .main-text .point-text h5 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .beranda-garda .main-text {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .beranda-garda {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(asset/Foto-galeri/IDE04915.jpeg);
+    background-position-x: -230px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  section {
+    padding: 1rem 1rem 1rem;
+  }
+
+  .contact-jalan {
+    width: 300px;
+    text-align: center;
+  }
+
+  .beranda-garda {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(asset/Foto-galeri/IDE04915.jpeg);
+    background-position-x: -240px;
+    background-size: cover;
+  }
+}
