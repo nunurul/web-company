@@ -553,11 +553,6 @@ nav .navbar-menu li a:hover {
     justify-content: center;
   }
 
-  .beranda-garda .main-text {
-    position: absolute;
-    bottom: 50px;
-  }
-
   .beranda-garda .main-text .title-beranda {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -572,7 +567,7 @@ nav .navbar-menu li a:hover {
 
   .beranda-garda .main-text {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
   }
 }
 
