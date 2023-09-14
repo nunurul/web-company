@@ -528,8 +528,8 @@ nav .navbar-menu li a:hover {
 
 @media screen and (max-width: 534px) {
   .beranda-garda .main-text p {
-    width: 270px;
-    text-align: justify;
+    width: 300px;
+    text-align: left;
     font-size: 0.8rem;
     line-height: 1.2rem;
   }
